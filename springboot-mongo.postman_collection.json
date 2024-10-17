@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "7e3b3567-5b35-4948-9153-e6164b3fd9ba",
+		"name": "mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3762481"
+	},
+	"item": [
+		{
+			"name": "add emp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"EMP0006\",\r\n    \"name\": \"Harry\",\r\n    \"department\": \"IT\",\r\n    \"age\": 34\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updat emp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"EMP0001\",\r\n    \"name\": \"Zaw\",\r\n    \"department\": \"IT\",\r\n    \"age\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get emp list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete emp",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/EMP0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"EMP0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/getByName/Mutu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"getByName",
+						"Mutu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByNameAndAge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/getByNameAndAge/Mutu/40",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"getByNameAndAge",
+						"Mutu",
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByNameOrId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/getByNameOrId/Mutu/35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"getByNameOrId",
+						"Mutu",
+						"35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCountByDep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/getCountByDep/IT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"getCountByDep",
+						"IT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getListBySort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/getListBySort/IT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"getListBySort",
+						"IT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSpecificFileds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/getSpecificFileds/EMP0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"getSpecificFileds",
+						"EMP0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOlderAge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/getOlderAge/40",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"getOlderAge",
+						"40"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
