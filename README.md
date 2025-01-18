@@ -17,3 +17,7 @@ db.createUser({
     }]
 })
 ```
+## example
+```
+mongodb://testuser:test123456@localhost:27017/test-db?authSource=admin
+```
