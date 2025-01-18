@@ -1,3 +1,10 @@
+## con url
+
+```
+mongodb://<username>:<password>@<host>:<port>/<database>?authSource=<authDatabase>
+```
+
+
 ## create user & grant access
 
 ```javascript
